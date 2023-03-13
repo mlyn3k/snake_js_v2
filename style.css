@@ -21,11 +21,22 @@ p {
 }
 
 button {
-    margin-top: 5px;
+    margin-top: 10px;
     height: 50px;
-    width: 100px;
+    width: 150px;
 }
 
 button:hover {
-    background-color: rgb(186, 86, 86);
+    background-color:rgb(95, 95, 91);
+    
+}
+
+#stopGame {
+    height: 30px;
+    width: 350px;
+    background-color: rgb(95, 95, 91);
+}
+
+#stopGame:hover {
+    background-color:whitesmoke;
 }

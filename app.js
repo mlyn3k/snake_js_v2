@@ -58,7 +58,11 @@
             points++;
         }
     }
+    function stopGame() {
+        pauseGame = true;
+    }
 
+  
 
     function resetGame() {
         snake = [];
@@ -147,6 +151,8 @@
         context2d.fillText("Points:" + points, 10, 20);
     }
 
+
+    
     function startApp() {
         canvas = document.getElementById("canvas");
         context2d = canvas.getContext("2d");
@@ -155,6 +161,8 @@
         document.getElementById("left").addEventListener("click", buttonLeft);
         document.getElementById("right").addEventListener("click", buttonRight);
         document.getElementById("down").addEventListener("click", buttonDown);
+        document.getElementById("stopGame").addEventListener("click", stopGame);
+     
         
 
         resetGame();
