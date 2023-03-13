@@ -25,3 +25,7 @@ button {
     height: 50px;
     width: 100px;
 }
+
+button:hover {
+    background-color: rgb(186, 86, 86);
+}
