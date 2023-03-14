@@ -152,6 +152,26 @@
         context2d.fillText("Points:" + points, 10, 20);
     }
 
+    function congratulation() {
+        context2d.font = "30px Arial";
+        context2d.fillStyle = "white";
+        if(points == 2) {
+            context2d.fillText("Nice!", 170, 350);
+        }
+        if(points == 5) {
+            context2d.fillText("Good!", 170, 350);
+        }
+        if(points == 15) {
+            context2d.fillText("Master!", 170, 350);
+        }
+        if(points == 20) {
+            context2d.fillText("You rock!", 170, 350);
+        }
+        if(points == 30) {
+            context2d.fillText("Amazing", 170, 350);
+        }
+    }
+
 
     
     function startApp() {
@@ -163,6 +183,7 @@
         document.getElementById("right").addEventListener("click", buttonRight);
         document.getElementById("down").addEventListener("click", buttonDown);
         document.getElementById("stopGame").addEventListener("click", stopGame);
+        
      
         
 
@@ -176,6 +197,7 @@
             drawPoints();
             drawFood();
             drawSnake();
+            congratulation();
 
         }, 100);
     }
